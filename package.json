@@ -27,6 +27,8 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-node": "^5.2.2",
-		"f-babagang": "file:"
+		"dotenv": "^16.4.5",
+		"f-babagang": "file:",
+		"firebase": "^10.13.1"
 	}
 }

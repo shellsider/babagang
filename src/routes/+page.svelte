@@ -1,65 +1,74 @@
 <script>
-	import { gangMembers } from '../stores/gang.js';
-
-	let members = [];
-	$: members = $gangMembers;
+	import NavbarSection from '../sections/HomePageSections/Navbar.svelte';
+	import backgroundImage from '$lib/babagang_background.webp';
 </script>
 
-<div class="min-h-screen bg-black p-4 text-white md:p-8 lg:p-16">
-	<!-- Title and Reward Section -->
-	<div class="relative mb-8 text-center lg:text-left">
-		<div class="mb-4 text-center text-3xl font-bold text-green-500 lg:text-5xl">The Baba Gang</div>
+<!-- Background section -->
+<div
+	class="relative min-h-screen bg-cover bg-center"
+	style="background-image: url('{backgroundImage}');"
+>
+	<!-- Import Navbar Section -->
+	<NavbarSection />
 
-		<!-- For large screens, position on top-right, for small screens keep in flow -->
-		<div
-			class="reward-box rounded border-2 border-green-500 bg-black p-4 text-center text-xl text-green-500 lg:absolute lg:right-0 lg:top-0"
+	<!-- Main Section with H1 and Button -->
+	<div
+		class="absolute inset-0 mt-32 flex flex-col items-center justify-start px-4 text-center md:mt-64 lg:mt-64"
+	>
+		<h1
+			class="heading mt-2 text-4xl font-extrabold tracking-widest text-white drop-shadow-lg md:text-6xl lg:text-8xl"
 		>
-			<p>
-				FOR ANY INFORMATION<br />
-				REWARD WILL BE 3 LAKH ₹.
-			</p>
-		</div>
-	</div>
+			BABAGANG
+		</h1>
 
-	<!-- Member Information Section -->
-	<div class="member space-y-8">
-		{#each members as member, i (member.id)}
-			<div class="lg:mb-8 lg:flex lg:items-center lg:space-x-8">
-				{#if i === 5}
-					<!-- Gang Hacker with image on the right -->
-					<div class="lg:order-2 lg:w-2/3">
-						<h2 class="text-2xl font-bold lg:text-3xl {member.titleColor} mb-2">
-							About {member.name}:
-						</h2>
-						<p class="text-justify text-xl leading-7 lg:text-2xl">{member.description}</p>
-					</div>
-					<img class="member-img mb-4 lg:order-1 lg:mb-0" src={member.image} alt={member.name} />
-				{:else}
-					<!-- Regular members with image on the left -->
-					<img class="member-img mb-4 lg:mb-0" src={member.image} alt={member.name} />
-					<div class="lg:w-2/3">
-						<h2 class="text-2xl font-bold lg:text-3xl {member.titleColor} mb-2">
-							About {member.name}:
-						</h2>
-						<p class="text-justify text-xl leading-7 lg:text-2xl">{member.description}</p>
-					</div>
-				{/if}
-			</div>
-		{/each}
+		<!-- Pill Button -->
+		<a
+			href="/info"
+			class="pill-button mt-4 rounded-full border-2 border-red-500 px-16 py-4 text-xl font-bold text-white transition-all duration-300 hover:bg-gradient-to-r hover:from-red-500 hover:to-red-700 hover:text-white lg:px-20 lg:py-5 lg:text-2xl"
+		>
+			Inf0
+		</a>
 	</div>
 </div>
 
 <style>
-	/* For small screens, the image will take full width */
-	.member-img {
-		width: 100%;
-		height: auto;
+	.min-h-screen {
+		background-size: cover;
+		background-position: center;
+		height: 100vh;
 	}
 
-	/* On large screens, we restrict the width to 25% */
+	.heading {
+		margin-top: 100px;
+	}
+
+	/* Move the heading and button slightly down */
 	@media (min-width: 1024px) {
-		.member-img {
-			width: 25%;
+		.heading {
+			margin-top: 0;
 		}
+	}
+
+	/* Responsive for small devices */
+	@media (max-width: 768px) {
+		.heading {
+			margin-top: 0; /* Moves heading slightly down on smaller screens */
+		}
+
+		.pill-button {
+			font-size: 1.25rem;
+			padding: 0.5rem 2rem;
+		}
+	}
+
+	/* Hover effects for the pill button */
+	.pill-button {
+		background: transparent;
+		border-radius: 9999px;
+	}
+
+	.pill-button:hover {
+		background: linear-gradient(to right, #ff3e3e, #ff1a1a);
+		color: white;
 	}
 </style>
