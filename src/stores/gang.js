@@ -3,7 +3,7 @@ import { writable } from 'svelte/store';
 import gangleader from '$lib/gangleader.png'
 import bali from '$lib/bali.png'
 import silentKiller from '$lib/silent_killer.png'
-import crackSupplier from '$lib/crack_suplier.png'
+import crackSupplier from '$lib/crack_supplier.jpeg'
 
 
 export const gangMembers = writable([
