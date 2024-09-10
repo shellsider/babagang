@@ -1,8 +1,8 @@
 // src/stores/gang.js
 import { writable } from 'svelte/store';
-import gangleader from '$lib/gangleader.png'
-import bali from '$lib/bali.png'
-import silentKiller from '$lib/silent_killer.png'
+import gangleader from '$lib/gang_leader_2.jpeg'
+import bali from '$lib/bali_2.jpeg'
+import silentKiller from '$lib/silent_killer_2.jpeg'
 import crackSupplier from '$lib/crack_supplier.jpeg'
 
 
