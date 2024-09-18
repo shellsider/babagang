@@ -10,7 +10,7 @@
 	<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 		<div class="flex h-16 items-center justify-between">
 			<div class="flex-shrink-0">
-				<a href="/" class="text-center text-xl font-bold text-white">BABAGANG</a>
+				<a href="/" class="text-center text-xl font-bold text-white">BABAGANG!</a>
 			</div>
 			<div class="hidden justify-end space-x-4 md:flex">
 				<a href="/info" class="text-white hover:text-gray-400">About</a>
