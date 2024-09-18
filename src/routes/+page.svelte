@@ -39,25 +39,35 @@
 	}
 
 	.heading {
-		margin-top: 100px;
+		margin-top: 20px;
 	}
 
 	/* Move the heading and button slightly down */
-	@media (min-width: 1024px) {
+
+	@media (max-width: 1024px) {
 		.heading {
-			margin-top: 0;
+			margin-top: 75px;
+			font-size: 100px;
 		}
 	}
 
 	/* Responsive for small devices */
 	@media (max-width: 768px) {
 		.heading {
-			margin-top: 0; /* Moves heading slightly down on smaller screens */
+			margin-top: 125px; /* Moves heading slightly down on smaller screens */
+			font-size: 50px;
 		}
 
 		.pill-button {
 			font-size: 1.25rem;
 			padding: 0.5rem 2rem;
+		}
+	}
+
+	@media (max-width: 400px) {
+		.heading {
+			margin-top: 125px; /* Moves heading slightly down on smaller screens */
+			font-size: 44px;
 		}
 	}
 
