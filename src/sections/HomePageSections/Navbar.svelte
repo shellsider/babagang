@@ -15,8 +15,8 @@
 			<div class="hidden justify-end space-x-4 md:flex">
 				<a href="/info" class="text-white hover:text-gray-400">About</a>
 				<a href="#contact" class="text-white hover:text-gray-400">Contact</a>
-				<a href="#join" class="text-white hover:text-gray-400">Join</a>
-				<a href="#signin" class="text-white hover:text-gray-400">Sign In</a>
+				<a href="/signup" class="text-white hover:text-gray-400">Join</a>
+				<a href="/signin" class="text-white hover:text-gray-400">Sign In</a>
 			</div>
 			<div class="flex items-center md:hidden">
 				<button on:click={toggleMenu} class="text-white focus:outline-none">

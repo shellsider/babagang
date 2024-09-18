@@ -10,7 +10,7 @@
 		<!-- Left Form Section -->
 		<div class="flex w-full flex-col items-center justify-center p-8 md:w-1/2">
 			<!-- Heading Section -->
-			<h1 class="mb-6 text-3xl font-bold">Join Us</h1>
+			<h1 class="mb-6 text-3xl font-bold">Sign In</h1>
 			<!-- You can change this to "Sign Up" or any other heading -->
 
 			<form class="w-full space-y-6">
@@ -25,12 +25,12 @@
 				</div>
 
 				<div>
-					<label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+					<label for="password" class="block text-sm font-medium text-gray-700">Password</label>
 					<input
-						type="text"
-						id="username"
+						type="password"
+						id="password"
 						class="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
-						placeholder="Username"
+						placeholder="Password"
 					/>
 				</div>
 
