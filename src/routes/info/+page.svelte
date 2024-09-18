@@ -15,7 +15,7 @@
 		class="absolute left-4 top-4 z-50 rounded-full border-2 border-red-500 bg-transparent px-4 py-2 text-white transition duration-300 hover:bg-red-500"
 		on:click={goBack}
 	>
-		⬅ Back
+		⬅ Home
 	</button>
 
 	<!-- Title and Reward Section -->

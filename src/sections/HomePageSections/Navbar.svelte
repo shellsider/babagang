@@ -42,10 +42,10 @@
 	<!-- Dropdown menu -->
 	{#if isOpen}
 		<div class="absolute z-20 w-full bg-gray-800 text-center">
-			<a href="#about" class="block py-2 text-white hover:bg-gray-700">About</a>
+			<a href="info" class="block py-2 text-white hover:bg-gray-700">About</a>
 			<a href="#contact" class="block py-2 text-white hover:bg-gray-700">Contact</a>
-			<a href="#join" class="block py-2 text-white hover:bg-gray-700">Join</a>
-			<a href="#signin" class="block py-2 text-white hover:bg-gray-700">Sign In</a>
+			<a href="/signup" class="block py-2 text-white hover:bg-gray-700">Join</a>
+			<a href="/signin" class="block py-2 text-white hover:bg-gray-700">Sign In</a>
 		</div>
 	{/if}
 </nav>
